@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>UAP</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-logo">
+        <img src="/assets/Logo.jpg" alt="logo">
+      </div>
+      <span onclick="cart()" class="kranjang"><img  class="keranjang" src="assets/logo_keranjang.png" alt="" />
+      </span>
+    </div>
+    <div class="modal">
+      <div id="orders">
+        <table   class="cart">
+          <thead>
+            <tr>
+                <th>No</th>
+                <th>Game</th>
+                <th>Harga</th>
+                <th>Jumlah Item</th>
+            </tr>
+        </thead>
+        <tbody id="table_order"></tbody>
+        <tfoot id="totalHarga"></tfoot>
+        </table>
+        <!-- <div id="table_order"></div> -->
+        <button id="clearCart" onclick="clearCart()">Clear Cart</button>
+        <button id="checkOut" onclick="checkout()">Checkout</button>
+      </div>
+    </div>
+    <div class="main">
+      <div class="copy-container">
+        <h1 class="uap">UAP Game Store<span id="titik">.</span></h1>
+        <h2>Toko Gaming Online Zaman Now!</h2>
+    
+        
+      </div>
+      <div class="contents">
+        <h1 class="ml5">
+          <span class="text-wrapper">
+            <span class="line line1"></span>
+            <span class="letters letters-left">Games</span>
+            <span class="letters ampersand">&amp;</span>
+            <span class="letters letters-right">Genre</span>
+            <span class="line line2"></span>
+          </span>
+        </h1>
+        
+        <div class="contents-item snip1577">
+          <span class="spanG" onclick="filterGenre('fighting')" href=""><img src="./assets/Fighting.jpg">
+            <h3>Fighting</h3>
+            <h4>Best game of fight</h4>
+          </span>
+        </div>
+        <div class="contents-item snip1577">
+          <span class="spanG" onclick="filterGenre('fps')" href=""><img src="./assets/fps.jpg">
+            <h3>FPS</h3>
+            <h4>Best game of fire</h4>
+          </span>
+        </div>
+        <div class="contents-item snip1577">
+          <span class="spanG" onclick="filterGenre('rpg')" href=""><img src="./assets/rpg.jpg">
+            <h3>RPG</h3>
+            <h4>Best game of rpg</h4>
+          </span>
+        </div>
+        <div class="contents-item snip1577">
+          <span class="spanG" onclick="filterGenre('strategy')" href=""><img src="./assets/Action.jpg">
+            <h3>Action</h3>
+            <h4>Best game of action</h4>
+          </span>
+        </div>
+      </div>
+
+      <section id="cards">
+        <div class="cards-container">
+          <h1 class="ml12" style="color: white">Our Best Collection</h1>
+
+          <div class="card" id="gow">
+            <div class="poster" id="posGow">
+              <img src="./assets/GOW.jpg" alt="god of war" />
+            </div>
+            <div class="details" id="detGow">
+              <img src="/assets/GOW_logo.webp" alt="logo" class="logo" />
+              <h3 id="h3Gow">A Game By Santa Monica Studio</h3>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <div class="genre" id="genreGow">
+                <span>Action</span>
+                <span>Adventure</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" id="RE">
+            <div class="poster" id="posRE">
+              <img src="./assets/RE.jpg" alt="RDR" />
+            </div>
+            <div class="details" id="detRE">
+              <img src="/assets/RE logo.png" alt="logo" id="logoRE" />
+              <div id="testRE" style="margin-left: 120px; margin-bottom: 100px">
+                <h3 id="h3RE">A Game By Capcom</h3>
+                <div class="rating" id="rateV">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <div class="genre" id="genreRE">
+                  <span>Action</span>
+                  <span>Horror</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" id="rdr">
+            <div class="poster" id="posRdr">
+              <img src="./assets/RDR.jpg" alt="RDR" />
+            </div>
+            <div class="details" id="detRdr">
+              <img src="/assets/RDR logo.png" alt="logo" class="logo" />
+              <div id="test" style="margin-left: 40px; margin-bottom: 110px">
+                <h3 id="h3Rdr">A Game By Rockstar</h3>
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <div class="genre" id="genreRdr">
+                  <span>Action</span>
+                  <span>Adventure</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" id="lc">
+            <div class="poster" id="posLC">
+              <img src="./assets/HL.jpg" alt="RDR" />
+            </div>
+            <div class="details" id="detLC">
+              <img src="/assets/HL logo.png" alt="logo" id="logoLC" />
+              <div id="testLC" style="margin-left: 40px; margin-bottom: 80px">
+                <h3 id="h3LC">A Game By Avalanche</h3>
+                <h4 id="hogwart">Inspirated by<br />Harry Potter</h4>
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <div class="genre" id="genreLC">
+                  <span>Action</span>
+                  <span>Adventure</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div id="game-list">
+        <h3 class="section-title">Game Rekomendasi Untuk Kamu</h3>
+        <p class="noGenre" id="noGenre">Pilih dulu genre game favoritmu!</p>
+      </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/letter.js"></script>
+    <script src="assets/js/element.js"></script>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>

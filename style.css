@@ -1,0 +1,643 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:200);
+.snip1577 {
+  font-family: "Montserrat", Arial, sans-serif;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 500px;
+  max-width: 600px;
+  width: 100%;
+  color: #fff;
+  text-align: left;
+  font-size: 16px;
+  background: #000;
+}
+
+.snip1577 *,
+.snip1577:before,
+.snip1577:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.snip1577 img {
+  max-width: 100%;
+  backface-visibility: hidden;
+  vertical-align: top;
+}
+
+.snip1577:before,
+.snip1577:after {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  content: "";
+  background-color: #fff;
+  z-index: 1;
+  opacity: 0;
+}
+
+.snip1577:before {
+  width: 0;
+  height: 1px;
+}
+
+.snip1577:after {
+  height: 0;
+  width: 1px;
+}
+
+.snip1577 figcaption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 15px 20px;
+}
+
+.snip1577 h3,
+.snip1577 h4 {
+  margin: 0;
+  font-size: 1.1em;
+  font-weight: normal;
+  opacity: 0;
+}
+
+.snip1577 h4 {
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+
+.snip1577 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.snip1577:hover img,
+.snip1577.hover img {
+  zoom: 1;
+  filter: alpha(opacity=20);
+  -webkit-opacity: 0.2;
+  opacity: 0.2;
+}
+
+.snip1577:hover:before,
+.snip1577.hover:before,
+.snip1577:hover:after,
+.snip1577.hover:after {
+  opacity: 1;
+  -webkit-transition-delay: 0.25s;
+  transition-delay: 0.25s;
+}
+
+.snip1577:hover:before,
+.snip1577.hover:before {
+  width: 40px;
+}
+
+.snip1577:hover:after,
+.snip1577.hover:after {
+  height: 40px;
+}
+
+.snip1577:hover h3,
+.snip1577.hover h3,
+.snip1577:hover h4,
+.snip1577.hover h4 {
+  opacity: 1;
+}
+
+.snip1577:hover h3,
+.snip1577.hover h3 {
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.snip1577:hover h4,
+.snip1577.hover h4 {
+  -webkit-transition-delay: 0.35s;
+  transition-delay: 0.35s;
+}
+/* hoverkeren */
+body {
+  font-family: "Avenir Next";
+  margin: 0;
+  min-height: 100vh;
+  background: #0c192c;
+}
+
+li {
+  list-style: none;
+}
+
+#clearCart {
+  cursor: pointer;
+  color: white;
+  background-color: red;
+  border-radius: 10px;
+}
+
+#clearCart:hover {
+  color: orange;
+  background-color: #000;
+}
+
+#checkOut {
+  color: #ffffff;
+  background-color: green;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#checkOut:hover {
+  color: green;
+  background-color: #fff;
+}
+
+.header {
+  background-color: hsla(42, 99%, 46%, 0.75);
+  color: #fff;
+  height: 90px;
+}
+
+.header-logo {
+  float: left;
+  font-size: 43px;
+  background-color: crimson;
+  width: 90px;
+  height: 90px;
+}
+
+.header-logo img {
+  width: 90px;
+  height: 90px;
+}
+
+.header-list li {
+  float: left;
+  padding: 33px 20px;
+}
+
+.main {
+  padding: 100px 80px;
+  background-image: url("/assets/bg.jpg");
+}
+
+.keranjang {
+  float: right;
+  padding: 0;
+  background-color: black;
+  cursor: pointer;
+  height: 90px;
+  width: 120px;
+}
+
+.copy-container h1 {
+  font-size: 140px;
+  color: hsla(42, 99%, 46%, 0.75);
+  text-shadow: -2px 0 #dee7ec, 0 2px #dee7ec, 2px 0 #dee7ec, 0 -2px #dee7ec;
+}
+
+.copy-container h2 {
+  font-size: 60px;
+  color: hsla(0, 0%, 0%, 0.75);
+  text-shadow: -2px 0 #dee7ec, 0 2px #dee7ec, 2px 0 #dee7ec, 0 -2px #dee7ec;
+}
+
+.copy-container #titik {
+  color: black;
+}
+
+.contents {
+  height: 500px;
+  margin-top: 100px;
+  background-color: hsla(42, 99%, 46%, 0.75);
+  border-top-right-radius: 100px;
+  border-top-left-radius: 100px;
+}
+
+.contents-item {
+  float: left;
+  margin-right: 75px;
+}
+
+.contents-item p {
+  font-size: 24px;
+  margin-top: 30px;
+}
+.contents-item img {
+  width: 600px;
+  height: 400px;
+  cursor: pointer;
+  margin-left: 3%;
+}
+
+.contents-item img:hover {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+/* text mooving */
+.ml12 {
+  font-weight: 200;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
+
+.ml12 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.ml5 {
+  position: relative;
+  font-weight: 300;
+  font-size: 4.5em;
+  color: #ffffff;
+  text-align: center;
+  font-size: 120px;
+}
+
+.ml5 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+  line-height: 1em;
+}
+
+.ml5 .line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 3px;
+  width: 100%;
+  background-color: #ffffff;
+  transform-origin: 0.5 0;
+}
+
+.ml5 .ampersand {
+  font-family: Baskerville, serif;
+  font-style: italic;
+  font-weight: 400;
+  width: 1em;
+  margin-right: -0.1em;
+  margin-left: -0.1em;
+}
+
+.ml5 .letters {
+  display: inline-block;
+  opacity: 0;
+}
+/* ini untuk card nya */
+
+.cards-container {
+  display: inline-block;
+  border-radius: 100px;
+}
+
+#cards {
+  text-align: center;
+  background: linear-gradient(hsla(42, 99%, 46%, 0.75), #191d29, black);
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+.card {
+  position: relative;
+  width: 1000px;
+  height: 600px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  display: inline-block;
+  place-items: center;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.card .poster {
+  position: relative;
+  overflow: hidden;
+}
+
+.card .poster::before {
+  content: "";
+  position: absolute;
+  bottom: -150px;
+  width: 100%;
+  height: 75%;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.card #posGow::before {
+  background: linear-gradient(0deg, #9a939b 50%, transparent);
+}
+
+.card #posRdr::before {
+  background: linear-gradient(0deg, #875126 30%, transparent);
+}
+
+.card #posLC::before {
+  background: linear-gradient(0deg, #99b0b6 30%, transparent);
+}
+
+.card #posRE::before {
+  background: linear-gradient(0deg, #495767 30%, transparent);
+}
+
+.card:hover .poster::before {
+  bottom: 0px;
+}
+
+.card .poster img {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.card .details #logoLC {
+  width: 80%;
+  transition: 0.5s;
+  margin-bottom: 10px;
+}
+
+.card .details #logoRE {
+  width: 40%;
+  transition: 0.5s;
+  margin-bottom: 100px;
+  margin-left: 100px;
+}
+
+.card:hover .poster img {
+  transform: translateY(-50px);
+  filter: blur(3px);
+}
+
+.card:hover .details {
+  transform: translateY(-50px);
+}
+
+.card #detGow {
+  position: absolute;
+  bottom: 50px;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  z-index: 2;
+  transition: 0.5s;
+}
+
+.card #detRdr {
+  position: absolute;
+  bottom: 50px;
+  display: grid;
+  place-items: start;
+  width: 70%;
+  z-index: 2;
+  transition: 0.5s;
+}
+
+.card #detLC {
+  position: absolute;
+  bottom: 50px;
+  display: grid;
+  place-items: start;
+  width: 70%;
+  z-index: 2;
+  transition: 0.5s;
+}
+
+.card #detRE {
+  position: absolute;
+  bottom: 50px;
+  display: grid;
+  place-items: start;
+  width: 70%;
+  z-index: 2;
+  transition: 0.5s;
+}
+
+.card .details {
+  display: inline-block;
+  position: absolute;
+  bottom: 80px;
+  text-align: start;
+  z-index: 2;
+  transition: 0.5s;
+}
+
+.card:hover .details {
+  bottom: 40;
+}
+
+.card .details .logo {
+  width: 50%;
+}
+
+.card .details #h3Gow {
+  color: #47688b;
+  font-size: 25px;
+}
+
+.card .details #h3Rdr {
+  color: whitesmoke;
+  text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+  font-size: 25px;
+  font-family: Times New Roman;
+}
+
+.card .details #h3LC {
+  color: #bb9345;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  font-size: 25px;
+}
+
+.card .details #h3RE {
+  color: #c3ba8c;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  font-size: 25px;
+}
+
+.card .details #hogwart {
+  color: #bcd1de;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+.card .details .rating {
+  position: relative;
+  padding: 5px 0;
+}
+
+.card .details #rateV {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+.card .details .genre {
+  position: relative;
+  margin-top: 5px;
+}
+
+.card .details #genreGow span {
+  padding: 2px 5px;
+  color: #bcd1de;
+  background-color: #47688b;
+  border-radius: 5px;
+}
+
+.card .details #genreRdr span {
+  padding: 2px 5px;
+  color: black;
+  background-color: #cf0000;
+  border-radius: 5px;
+}
+
+.card .details #genreLC span {
+  padding: 2px 5px;
+  color: #47688b;
+  background-color: #bcd1de;
+  border-radius: 5px;
+}
+
+.card .details #genreRE span {
+  padding: 2px 5px;
+  color: black;
+  background-color: #c3ba8c;
+  border-radius: 5px;
+  margin-left: 25px;
+}
+/* finish */
+
+/* genre bawah */
+.game {
+  height: 320px;
+  width: 2000px;
+  background-color: hsla(42, 99%, 46%, 0.75);
+  display: flex;
+  margin: 20px;
+  border-radius: 10px;
+  margin-top: 100px;
+  width: 90%;
+}
+
+.game .pictureGame {
+  border-radius: 10px;
+  width: 280px;
+  height: 320px;
+}
+
+#infoGame {
+  width: auto;
+  height: auto;
+  margin: 20px;
+  color: rgb(200, 198, 115);
+  font-size: 28px;
+}
+
+.game .price {
+  color: rgb(197, 134, 16);
+  font-size: 30px;
+}
+
+#addToCart {
+  width: 300px;
+  margin: 10px;
+  cursor: pointer;
+  color: black;
+  background-color: rgb(238, 203, 138);
+}
+
+#addToCart:hover {
+  background-color: black;
+  color: orange;
+}
+
+.price {
+  margin: 10px;
+}
+
+.isiGameList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  width: 85%;
+  background-color: #191d29;
+  margin-left: 3%;
+}
+
+/* finish */
+
+/* cartnya */
+.cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+.contact-form {
+  padding-top: 100px;
+}
+
+/* Tambahkan CSS untuk tags <input> dan <textarea> */
+input {
+  width: 400px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 20px;
+  font-size: 18px;
+  border: 1px solid #dee7ec;
+}
+
+textarea {
+  width: 400px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 20px;
+  font-size: 18px;
+  border: 1px solid #dee7ec;
+}
+
+/* Tambahkan CSS untuk contact-submit */
+
+.modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  display: block;
+  z-index: 11;
+}
+
+.modal #orders {
+  display: block;
+  border: 1px solid #333;
+  background-color: white;
+  padding: 16px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: 300px auto;
+  z-index: 100;
+  width: 50%;
+  border-radius: 100px;
+}
+
+.modal #orders .cart {
+  font-size: 60px;
+  z-index: 10;
+}
